@@ -83,6 +83,7 @@ body {
 		border: 1px solid $desaturated-red;
 		color: #333;
 		font-family: $font-josefin;
+		font-weight: 300;
 		margin: 0 32px;
 		padding: 16px 24px;
 		// width: 100%;
@@ -112,5 +113,67 @@ body {
 	a {
 		color: $dark-grayish-red;
 		text-decoration: none;
+	}
+}
+
+@media (min-width: 760px) {
+	body {
+		background-image: url(../images/bg-pattern-desktop.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top center;
+		text-align: left;
+	}
+	.coming-soon {
+		display: flex;
+		justify-content: space-between;
+		max-width: 1440px;
+		margin: 0 auto;
+
+		&__column {
+			&--first {
+				flex-basis: 30%;
+				margin-left: 11.5%;
+			}
+
+			&--second {
+				display: block;
+			}
+		}
+
+		&__logo {
+			margin: 64px 0 128px;
+			width: 160px;
+		}
+
+		&__hero--mobile {
+			display: none;
+		}
+
+		&__title {
+			font-size: 64px;
+			width: 100%;
+		}
+
+		&__text {
+			font-size: 16px;
+			margin: 0 0 44px;
+		}
+	}
+
+	.coming-soon-form {
+		&__email-input,
+		&__email-submit {
+			height: 56px;
+		}
+
+		&__email-input {
+			margin: 0;
+			width: 100%;
+		}
+
+		&__email-submit {
+			width: 100px;
+		}
 	}
 }
