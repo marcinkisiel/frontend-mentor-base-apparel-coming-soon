@@ -10,7 +10,8 @@ $soft-red: hsl(0, 93%, 68%);
 $dark-grayish-red: hsl(0, 6%, 24%);
 
 $linear-gradient-light: 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%);
-$linear-gradient-dark: 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%);
+$gradient-button: 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%);
+$gradient-button-hover: 135deg, lighten(hsl(0, 80%, 86%), 8%), lighten(hsl(0, 74%, 74%), 8%);
 
 *,
 *::after,
@@ -39,6 +40,7 @@ body {
 
 	&__hero--mobile {
 		margin-bottom: 64px;
+		width: 100%;
 	}
 
 	&__title {
@@ -77,6 +79,11 @@ body {
 	&__email-submit {
 		border-radius: 35px;
 		height: 48px;
+
+		&:focus {
+			border: 2px solid $soft-red;
+			outline: none;
+		}
 	}
 
 	&__email-input {
@@ -90,23 +97,25 @@ body {
 		padding: 16px 24px;
 		width: 100%;
 
-		&:focus {
-			outline: none;
-		}
-
 		&::placeholder {
 			color: $desaturated-red;
 		}
 	}
 
 	&__email-submit {
-		background: linear-gradient($linear-gradient-dark);
+		background: linear-gradient($gradient-button);
 		border: none;
 		box-shadow: 0 10px 20px lighten($desaturated-red, 15%);
+		cursor: pointer;
 		position: absolute;
 		top: 0;
 		right: 0;
 		width: 64px;
+		z-index: 5;
+
+		&:hover {
+			background: linear-gradient($gradient-button-hover);
+		}
 	}
 }
 
@@ -119,6 +128,12 @@ body {
 	a {
 		color: $dark-grayish-red;
 		text-decoration: none;
+
+		&:focus {
+			color: $desaturated-red;
+			outline: none;
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -187,6 +202,8 @@ body {
 	}
 
 	.attribution {
-		margin-bottom: 16px;
+		margin-top: 16px;
+		text-align: center;
+		width: 100%;
 	}
 }

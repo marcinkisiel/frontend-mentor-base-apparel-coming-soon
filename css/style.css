@@ -7,7 +7,7 @@ body { background: linear-gradient(135deg, white, #fff5f5); font-family: "Josefi
 
 .coming-soon__logo { display: block; margin: 32px; width: 100px; }
 
-.coming-soon__hero--mobile { margin-bottom: 64px; }
+.coming-soon__hero--mobile { margin-bottom: 64px; width: 100%; }
 
 .coming-soon__title { color: #ce9797; font-size: 36px; font-weight: 300; letter-spacing: 10px; line-height: 1.1; margin: 0 auto 25px; text-transform: uppercase; width: 60%; }
 
@@ -21,17 +21,21 @@ body { background: linear-gradient(135deg, white, #fff5f5); font-family: "Josefi
 
 .coming-soon-form__email-input, .coming-soon-form__email-submit { border-radius: 35px; height: 48px; }
 
-.coming-soon-form__email-input { background-color: transparent; border: 1px solid #ce9797; color: #333; display: block; font-family: "Josefin Sans", sans-serif; font-weight: 300; padding: 16px 24px; width: 100%; }
+.coming-soon-form__email-input:focus, .coming-soon-form__email-submit:focus { border: 2px solid #f96262; outline: none; }
 
-.coming-soon-form__email-input:focus { outline: none; }
+.coming-soon-form__email-input { background-color: transparent; border: 1px solid #ce9797; color: #333; display: block; font-family: "Josefin Sans", sans-serif; font-weight: 300; padding: 16px 24px; width: 100%; }
 
 .coming-soon-form__email-input::placeholder { color: #ce9797; }
 
-.coming-soon-form__email-submit { background: linear-gradient(135deg, #f8bfbf, #ee8c8c); border: none; box-shadow: 0 10px 20px #e7cbcb; position: absolute; top: 0; right: 0; width: 64px; }
+.coming-soon-form__email-submit { background: linear-gradient(135deg, #f8bfbf, #ee8c8c); border: none; box-shadow: 0 10px 20px #e7cbcb; cursor: pointer; position: absolute; top: 0; right: 0; width: 64px; z-index: 5; }
+
+.coming-soon-form__email-submit:hover { background: linear-gradient(135deg, #fce3e3, #f3afaf); }
 
 .attribution { color: #ce9797; font-size: 11px; margin-bottom: 16px; text-align: center; }
 
 .attribution a { color: #413a3a; text-decoration: none; }
+
+.attribution a:focus { color: #ce9797; outline: none; text-decoration: underline; }
 
 @media (min-width: 760px) { body { background-image: url(../images/bg-pattern-desktop.svg); background-repeat: no-repeat; background-size: cover; background-position: top center; text-align: left; }
   .coming-soon { display: flex; justify-content: space-between; max-width: 1440px; margin: 0 auto; }
@@ -45,4 +49,4 @@ body { background: linear-gradient(135deg, white, #fff5f5); font-family: "Josefi
   .coming-soon-form__email-input, .coming-soon-form__email-submit { height: 56px; }
   .coming-soon-form__email-input { font-size: 16px; margin: 0; width: 100%; }
   .coming-soon-form__email-submit { width: 100px; }
-  .attribution { margin-bottom: 16px; } }
+  .attribution { margin-top: 16px; text-align: center; width: 100%; } }
