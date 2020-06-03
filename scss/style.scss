@@ -110,8 +110,8 @@ body {
 		position: absolute;
 		top: 0;
 		right: 0;
+		transition: all 0.2s;
 		width: 64px;
-		z-index: 5;
 
 		&:hover {
 			background: linear-gradient($gradient-button-hover);
@@ -151,6 +151,10 @@ body {
 		max-width: 1440px;
 		margin: 0 auto;
 
+		&__column + &__column {
+			margin-left: 5%;
+		}
+
 		&__column {
 			&--first {
 				flex-basis: 30%;
@@ -159,6 +163,7 @@ body {
 
 			&--second {
 				display: block;
+				flex-shrink: 1;
 			}
 		}
 
