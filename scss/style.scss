@@ -70,7 +70,8 @@ body {
 }
 
 .coming-soon-form {
-	margin-bottom: 64px;
+	margin: 0 32px 64px;
+	position: relative;
 
 	&__email-input,
 	&__email-submit {
@@ -82,11 +83,12 @@ body {
 		background-color: transparent;
 		border: 1px solid $desaturated-red;
 		color: #333;
+		display: block;
 		font-family: $font-josefin;
 		font-weight: 300;
-		margin: 0 32px;
+		// margin: 0 32px;
 		padding: 16px 24px;
-		// width: 100%;
+		width: 100%;
 
 		&:focus {
 			outline: none;
@@ -100,6 +102,10 @@ body {
 	&__email-submit {
 		background: linear-gradient($linear-gradient-dark);
 		border: none;
+		box-shadow: 0 10px 20px lighten($desaturated-red, 15%);
+		position: absolute;
+		top: 0;
+		right: 0;
 		width: 64px;
 	}
 }
@@ -162,12 +168,15 @@ body {
 	}
 
 	.coming-soon-form {
+		margin: 0 0 160px;
+
 		&__email-input,
 		&__email-submit {
 			height: 56px;
 		}
 
 		&__email-input {
+			font-size: 16px;
 			margin: 0;
 			width: 100%;
 		}
@@ -175,5 +184,9 @@ body {
 		&__email-submit {
 			width: 100px;
 		}
+	}
+
+	.attribution {
+		margin-bottom: 16px;
 	}
 }

@@ -17,17 +17,17 @@ body { background: linear-gradient(135deg, white, #fff5f5); font-family: "Josefi
 
 .coming-soon__column--second { display: none; }
 
-.coming-soon-form { margin-bottom: 64px; }
+.coming-soon-form { margin: 0 32px 64px; position: relative; }
 
 .coming-soon-form__email-input, .coming-soon-form__email-submit { border-radius: 35px; height: 48px; }
 
-.coming-soon-form__email-input { background-color: transparent; border: 1px solid #ce9797; color: #333; font-family: "Josefin Sans", sans-serif; font-weight: 300; margin: 0 32px; padding: 16px 24px; }
+.coming-soon-form__email-input { background-color: transparent; border: 1px solid #ce9797; color: #333; display: block; font-family: "Josefin Sans", sans-serif; font-weight: 300; padding: 16px 24px; width: 100%; }
 
 .coming-soon-form__email-input:focus { outline: none; }
 
 .coming-soon-form__email-input::placeholder { color: #ce9797; }
 
-.coming-soon-form__email-submit { background: linear-gradient(135deg, #f8bfbf, #ee8c8c); border: none; width: 64px; }
+.coming-soon-form__email-submit { background: linear-gradient(135deg, #f8bfbf, #ee8c8c); border: none; box-shadow: 0 10px 20px #e7cbcb; position: absolute; top: 0; right: 0; width: 64px; }
 
 .attribution { color: #ce9797; font-size: 11px; margin-bottom: 16px; text-align: center; }
 
@@ -41,6 +41,8 @@ body { background: linear-gradient(135deg, white, #fff5f5); font-family: "Josefi
   .coming-soon__hero--mobile { display: none; }
   .coming-soon__title { font-size: 64px; width: 100%; }
   .coming-soon__text { font-size: 16px; margin: 0 0 44px; }
+  .coming-soon-form { margin: 0 0 160px; }
   .coming-soon-form__email-input, .coming-soon-form__email-submit { height: 56px; }
-  .coming-soon-form__email-input { margin: 0; width: 100%; }
-  .coming-soon-form__email-submit { width: 100px; } }
+  .coming-soon-form__email-input { font-size: 16px; margin: 0; width: 100%; }
+  .coming-soon-form__email-submit { width: 100px; }
+  .attribution { margin-bottom: 16px; } }
