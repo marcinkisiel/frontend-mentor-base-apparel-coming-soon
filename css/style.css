@@ -1,7 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
 *, *::after, *::before { padding: 0; margin: 0; box-sizing: inherit; }
 
 html { box-sizing: border-box; }
 
-.attribution { font-size: 11px; text-align: center; }
+body { background: linear-gradient(135deg, white, #fff5f5); font-family: "Josefin Sans", sans-serif; text-align: center; }
 
-.attribution a { color: #3e52a3; }
+.coming-soon__logo { display: block; margin: 32px; width: 100px; }
+
+.coming-soon__hero--mobile { margin-bottom: 64px; }
+
+.coming-soon__title { color: #ce9797; font-size: 36px; font-weight: 300; letter-spacing: 10px; line-height: 1.1; margin: 0 auto 25px; text-transform: uppercase; width: 60%; }
+
+.coming-soon__subtitle { color: #333; font-weight: 600; }
+
+.coming-soon__text { color: #ce9797; font-size: 14px; line-height: 1.5; margin: 0 32px 32px; }
+
+.coming-soon__column--second { display: none; }
+
+.coming-soon-form { margin-bottom: 64px; }
+
+.coming-soon-form__email-input, .coming-soon-form__email-submit { border-radius: 35px; height: 48px; }
+
+.coming-soon-form__email-input { background-color: transparent; border: 1px solid #ce9797; color: #333; font-family: "Josefin Sans", sans-serif; margin: 0 32px; padding: 16px 24px; }
+
+.coming-soon-form__email-input:focus { outline: none; }
+
+.coming-soon-form__email-input::placeholder { color: #ce9797; }
+
+.coming-soon-form__email-submit { background: linear-gradient(135deg, #f8bfbf, #ee8c8c); border: none; width: 64px; }
+
+.attribution { color: #ce9797; font-size: 11px; margin-bottom: 16px; text-align: center; }
+
+.attribution a { color: #413a3a; text-decoration: none; }
