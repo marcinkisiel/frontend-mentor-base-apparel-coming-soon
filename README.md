@@ -33,6 +33,7 @@ Frontend Mentor
 <br/>
 ![Design preview](design/desktop-preview.jpg)
 ![Design preview](design/desktop-design.jpg)
+![Design preview](design/active-states.jpg)
 ![Design preview](design/mobile-design.jpg)
 
 ### contact
