@@ -83,6 +83,7 @@ body {
 		height: 48px;
 
 		&:focus {
+			background-color: transparent;
 			border: 2px solid $soft-red;
 			outline: none;
 		}
@@ -94,14 +95,22 @@ body {
 		color: #333;
 		display: block;
 		font-family: $font-josefin;
-		font-weight: 300;
-		// margin: 0 32px;
+		font-weight: 600;
 		padding: 16px 24px;
 		width: 100%;
 
 		&::placeholder {
 			color: $desaturated-red;
+			font-weight: 300;
 		}
+	}
+
+	&__email-input:invalid ~ &__error-icon {
+		visibility: visible;
+	}
+
+	&__email-input:invalid ~ &__error-message {
+		visibility: visible;
 	}
 
 	&__email-submit {
@@ -118,6 +127,23 @@ body {
 		&:hover {
 			background: linear-gradient($gradient-button-hover);
 		}
+	}
+
+	&__error-icon {
+		position: absolute;
+		top: 20%;
+		right: 80px;
+		visibility: hidden;
+		width: 20px;
+	}
+
+	&__error-message {
+		color: $soft-red;
+		display: block;
+		font-size: 12px;
+		padding: 10px 0 0 25px;
+		text-align: left;
+		visibility: hidden;
 	}
 }
 
@@ -146,7 +172,6 @@ body {
 	.coming-soon {
 		display: flex;
 		justify-content: space-between;
-		// max-width: 1440px;
 		margin: 0 auto;
 
 		&__column {
@@ -204,6 +229,14 @@ body {
 
 		&__email-submit {
 			width: 100px;
+		}
+
+		&__error-icon {
+			right: 115px;
+		}
+
+		&__error-message {
+			font-size: 14px;
 		}
 	}
 
