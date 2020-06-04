@@ -9,11 +9,11 @@
 ### description
 
 This is my solution for **_[Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0)_** challenge, which was to build out simple coming soon page.<br/>
-I'm working without Sketch design source file, I based my solution on JPEG design files, so this is not a _pixel-perfect_ solution.
+I worked without Sketch design source file, I based my solution on JPEG design files, so this is not a _pixel-perfect_ solution.
 
 ### current status
 
-unfinished
+finished
 
 ### implementation time
 

@@ -62,4 +62,4 @@ body { background: linear-gradient(135deg, white, #fff5f5); font-family: "Josefi
   .coming-soon-form__email-submit { width: 100px; }
   .coming-soon-form__error-icon { right: 115px; }
   .coming-soon-form__error-message { font-size: 14px; }
-  .attribution { margin-top: 16px; text-align: center; width: 100%; } }
+  footer { display: none; } }
